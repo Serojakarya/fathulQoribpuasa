@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">Kitab Hukum Puasa</a></li>
+    <li><a href="2.html">Hukum Tidak Puasa Ramadan</a></li>
+    <li><a href="3.html">Hukum I'tikaf</a></li>
+</ul>
+
+</div>
+
+
+<h1>HUKUM <br/>TIDAK PUASA RAMADHAN</h1><br/><br/>
+
+
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+ومن وطىء في نهار رمضان- حال كونه (عامداً في الفرج) وهو مكلف بالصوم، ونوى من الليل وهو آثم بهذا الوطء لأجل الصوم (فعليه القضاء والكفارة وهي عتق رقبة مؤمنة) وفي بعض النسخ سليمة من العيوب المضرة بالعمل والكسب (فإن لم يجد) ها (فصيام شهرين متتابعين فإن لم يستطع) صومهما(فإطعام ستين مسكيناً) أو فقيراً (لكل مسكين مد) أي مما يجزىء في صدقة الفطر فإن عجز عن الجميع استقرت الكفارة في ذمته، فإذا قدر بعد ذلك على خصلة من خصال الكفارة فعلها
+<br/><br/>
+ومن مات وعليه صيام - فائت (من رمضان) بعذر كمن أفطر فيه لمرض، ولم يتمكن من قضائه كأن استمر مرضه حتى مات فلا إثم عليه في هذا الفائت، ولا تدارك بالفدية، وإن فات بغير عذر ومات قبل التمكن من قضائه (أطعم عنه) أي أخرج الولي عن الميت من تركته (لكل يوم) فات (مد) طعام وهو رطل وثلث بالبغدادي وهو بالكيل نصف قدح مصري، وما ذكره المصنف هوالقول الجديد والقديم، لا يتعين الإطعام، بل يجوز للولي أيضاً أن يصوم عنه، بل يسن له ذلك كما في شرح المهذب وصوب في الروضة الجزم بالقديم
+<br/><br/>
+والشيخ - والعجوز والمريض الذي لا يرجى برؤه (إن عجز) كل منهم (عن الصوم يفطر ويطعم عن كل يوم مداً) ولا يجوز تعجيل المد قبل رمضان، ويجوز بعد فجر كل يوم
+<br/><br/>
+والحامل والمرضع إن خافتا على أنفسهما - ضرراً يلحقهما بالصوم كضرر المريض (أفطرتا و) وجب (عليهما القضاء وإن خافتا على أولادهما) أي إسقاط الولد في الحامل وقلة اللبن في المرضع (أفطرتا و) وجب (عليهما القضاء) للإفطار (والكفارة) أيضاً والكفارة أن يخرج (عن كل يوم مد وهو) كما سبق (رطل وثلث بالعراقي) ويعبر عنه بالبغدادي
+<br/><br/>
+والمريض والمسافر سفراً طويلا- مباحاً إن تضررا بالصوم (يفطران ويقضيان) وللمريض إن كان مرضه مطبقاً ترك النية من الليل، وإن لم يكن مطبقاً كما لو كان يحمُّ وقتاً دون وقت، وكان وقت الشروع في الصوم محموماً فله ترك النية، وإلا فعليه النية ليلاً فإن عادت الحمى واحتاج للفطر أفطر. وسكت المصنف عن صوم التطوع، وهو مذكور في المطولات، ومنه صوم عرفة وعاشوراء وتاسوعاء وأيام البيض وستة من شوال.
+
+</font></div>
+
+<hr><br/>
+
+
+<b><center>Tidak Puasa karena Hubungan Intim</b></center>
+<p>Hukum Orang Yang Melakukan Jima’ di Siang Hari Bulan Romadon</p>
+
+<p>Barang siapa melakukan jima’ di siang hari bulan Romadlon dalam keadaan sengaja melakukannya di bagian farji, dan dia adalah orang yang diwajibkan untuk berpuasa dan telah niat melakukan puasa di malam harinya serta dia dianggap berdosa melakukan jima’ tersebut karena berpuasa, maka wajib baginya untuk mengqadla’ puasanya dan membayar kafarat.</p>
+
+<p>Kafarat tersebut adalah memerdekakan budak mukmin. Dalam sebagian redaksi ada penjelasan “budak yang selamat dari cacat yang bisa mengganggu di dalam bekerja dan beraktifitas.”</p>
+
+<p>Jika ia tidak menemukan budak, maka wajib melakukan puasa dua bulan berturut-turut. Jika tidak mampu melakukan puasa dua bulan, maka wajib memberi maka enam puluh orang miskin atau faqir.</p>
+
+<p>Masing-masing mendapatkan satu mud, maksudnya dari jenis bahan makanan yang bisa mencukupi di dalam zakat fitrah.</p>
+
+<p>Jika ia tidak mampu melakukan semuanya, maka kafarat tersebut tetap menjadi tanggungannya. Ketika setelah itu ia mampu melakukan salah satunya, maka wajib baginya untuk melakukannya.</p><br/>
+
+<b><center>Hutang Puasa Hingga Meninggal Dunia</b></center>
+
+<p>Barang siapa meninggal dunia dan masih memiliki hutang puasa Romadlon yang ia tinggalkan sebab udzur seperti orang yang membatalkan puasa sebab sakit dan belum sempat mengqadla’inya semisal sakitnya terus berlanjut hingga ia meninggal dunia, maka tidak ada tanggungan dosa baginya di dalam puasa yang ia tinggalkan ini, dan tidak perlu ditebus dengan fidyah.</p>
+
+<p>Jika hutang puasa tersebut bukan karena udzur dan ia meninggal dunia sebelum sempat mengqadla’inya, maka wajib memberikan makanan sebagai ganti dari hutang puasanya. Maksudnya bagi seorang wali wajib mengeluarkan untuk mayat dari harta peninggalannya. Setiap hari yang telah ditinggalkan diganti dengan satu mud bahan makanan.</p>
+
+<p>Satu mud adalah satu rithl lebih sepertiga rithl negara Bagdad. Dan dengan takaran adalah separuh wadah takaran negara Mesir.</p>
+
+<p>Apa yang telah disebutkan oleh mushannif adalah qaul Jadid.</p>
+
+<p>Sedangkan menurut qaul Qadim, tidak harus memberi bahan makanan, bahkan bagi wali juga diperkenankan untuk melakukan puasa sebagai pengganti dari orang yang meninggal, bahkan hal itu disunnahkan bagi seorang wali sebagaimana keterangan di dalam kitah Syarh al Muhadzdzab.</p>
+
+<p>Dan di dalam kitab ar Raudlah, imam an Nawawi membenarkan kemantapan dengan pendapat qaul Qadim.</p></br/>
+
+<b><center>Lansia dan Orang Sakit Yang Tidak Ada Harapan Sembuh</b></center>
+
+<p>Orang laki-laki tua, wanita lansia, dan orang sakit yang tidak ada harapan untuk sembuh, ketika masing-masing dari ketiganya tidak mampu untuk berpuasa, maka diperkenankan untuk tidak berpuasa dan memberi bahan makanan sebanyak satu mud sebagai ganti dari setiap harinya.</p>
+
+<p>Tidak diperkenankan menta’jil pembayaran mud sebelum masuk bulan Romadlon, dan baru boleh dibayarkan setelah terbit fajar setiap harinya.</p><br/>
+
+<b><center>Ibu Hamil dan Menyusui</b></center>
+
+<p>Bagi wanita hamil dan menyusui, jika keduanya khawatir terjadi sesuatu yang membahayakan dirinya sendiri sebab berpuasa seperti bahaya yang dialami oleh orang sakit, maka diperkenankan untuk tidak berpuasa dan wajib bagi mereka berdua untuk mengqadla’inya.</p>
+
+<p>Jika keduanya khawatir pada anaknya, maksudnya khawatir keguguran bagi wanita hamil dan sedikitnya air susu bagi ibu menyusui, maka keduanya diperkenankan tidak berpuasa dan wajib bagi keduanya untuk mengqadla’i sebab membatalkan puasa dan juga membayar kafarat.</p>
+
+<p>Kafaratnya adalah setiap harinya wajib mengeluarkan satu mud. Satu mud, seperti yang telah dijelaskan, adalah satu rithl lebih sepertiga rithl negara Iraq. Dan diungkapkan dengan negara Baghdad.</p><br/>
+
+<b><center>Orang Sakit dan Musafir</b></center>
+
+<p>Orang yang sakit dan bepergian jauh yang hukumnya mubah, jika ia merasa berat untuk berpuasa, maka bagi keduanya diperkenankan untuk tidak berpuasa dan wajib mengqadla’inya.</p>
+
+<p>Bagi orang sakit, jika sakitnya terus menerus, maka baginya diperkenankan untuk tidak niat berpuasa di malam hari.</p>
+
+<p>Dan jika sakitnya tidak terus menerus, seperti demam dalam satu waktu dan tidak di waktu yang lain, namun di waktu memasuki pelaksanaan puasa (menginjak pagi hari) demamnya kambuh, maka baginya diperkenankan untuk tidak niat berpuasa -di malam hari-.</p>
+
+<p>Jika tidak demikian, maka wajib baginya untuk niat di malam hari. Kemudian jika demamnya kambuh dan ia butuh untuk membatalkan puasa, maka diperkenankan untuk membatalkan puasanya.</p><br/>
+
+<b><center>Puasa Sunnah</b></center>
+
+<p>Mushannif tidak menjelaskan tentang puasa sunnah. Dan puasa sunnah disebutkan di dalam kitab-kitab yang diperluas pembahasannya.</p>
+
+<p>Di antaranya adalah puasa Arafah, Asyura’, Tasu’a’, Ayyamul Bidh -tanggal 13, 14, 15-, dan puasa enam hari di bulan Syawal.<sup>1</sup></p>
+
+
+</p>
+
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Hari ‘Arafah adalah hari ke Sembilan bulan Dzul Hijjah. Sebelum hari ‘Arafah disunahkan berpuasa pada hari ke
+delapan dengan nama puasa hari Tarwiyah.<br/><br/>
+Hari ‘Asyura’ adalah hari ke sepuluh dari bulan Muharrom, sedangkan Tasu’a’ adalah hari kesembilannya.<br/><br/>
+Hari-hari putih maksudnya adalah hari tanggal 13, 14 dan 15 dalam setiap bulan hijriyah. Selain disunahkan pada
+hari putih, juga disunahkan puasa di hari hitam (Ayyam As-Sawwad), yakni tanggal 28, 29 dan 30 dalam
+setiap bulan hijriy</p>
+
+</phr>
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="1.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 2</font>
+	</a>
+	
+	<a href="3.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

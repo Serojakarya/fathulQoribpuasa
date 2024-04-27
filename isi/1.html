@@ -1,0 +1,598 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">Kitab Hukum Puasa</a></li>
+    <li><a href="2.html">Hukum Tidak Puasa Ramadan</a></li>
+    <li><a href="3.html">Hukum I'tikaf</a></li>
+
+</ul>
+
+</div>
+
+
+<h1>KITAB PUASA</h1><br/><br/>
+
+
+
+
+<div align="center" class="style6"><font size="4" face="LPMQ_IsepMisbah"><b>كتاب بيان أحكام الصيام
+</b></font></div>
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+وهو والصوم مصدران معناهما لغة الإمساك، وشرعاً إمساك عن مفطر بنية مخصوصة جميع نهار قابل للصوم من مسلم عاقل طاهر من حيض ونفاس (وشرائط وجوب الصيام ثلاثة أشياء) وفي بعض النسخ أربعة أشياء
+<br/><br/>
+الإسلام والبلوغ والعقل والقدرة على الصوم- وهذا هو الساقط على نسخة الثلاثة، فلا يجب الصوم على أضداد ذلك.
+<br/><br/>
+وفرائض الصوم أربعة أشياء- أحدها (النية) بالقلب فإن كان الصوم فرضاً كرمضان أو نذراً، فلا بد من إيقاع النية ليلاً، ويجب التعيين في صوم الفرض كرمضان، وأكمل نية صومه أن يقول الشخص نويت صوم غد عن أداء فرض رمضان هذه السنة لله تعالى
+<br/><br/>
+و- الثاني (الإمساك عن الأكل والشرب) وإن قل المأكول والمشروب عند التعمد، فإن أكل ناسياً أو جاهلاً لم يفطر إن كان قريب عهد بالإسلام، أو نشأ بعيداً عن العلماء وإلا أفطر
+<br/><br/>
+و- الثالث (الجماع) عامداً وأما الجماع ناسياً فكالأكل ناسياً
+<br/><br/>
+و)- الرابع (تعمد القيء) فلو غلبه القيء لم يبطل صومه
+<br/><br/>
+والذي يفطر به الصائم عشرة أشياء- أحدها وثانيها (ما وصل عمداً إلى الجوف) المنفتح (أو) غير المنفتح كالوصول من مأمومة إلى (الرأس) والمراد إمساك الصائم عن وصول عين إلى ما يسمى جوفاً
+<br/><br/>
+و- الثالث (الحقنة في أحد السبيلين) وهو دواء يحقن به المريض في قبل أو دبر المعبر عنهما في المتن بالسبيلين (و) الرابع (القيء عمداً) فإن لم يتعمد لم يبطل صومه كما سبق.
+<br/><br/>
+و- الخامس (الوطء عامداً) في الفرج فلا يفطر الصائم بالجماع ناسياً كما سبق
+<br/><br/>
+و- السادس (الإنزال) وهو خروج المني (عن مباشرة) بلا جماع محرماً كان كإخراجه بيده أو غير محرم كإخراجه بيد زوجته أو جاريته واحترز بمباشرة عن خروج المني بالاحتلام فلا إفطار به جزماً
+<br/><br/>
+و- السابع إلى آخر العشرة (الحيض والنفاس والجنون والردة) فمتى طرأ شيء منها في أثناء الصوم أبطله
+<br/><br/>
+ويستحب في الصوم ثلاثة أشياء- أحدها (تعجيل الفطر) إن تحقق غروب الشمس فإن شك فلا يعجل الفطر، ويسن أن يفطر على تمر وإلا فماء
+<br/><br/>
+و- الثاني (تأخير السحور) ما لم يقع في شك فلا يؤخر، ويحصل السحور بقليل الأكل والشرب (و) الثالث (ترك الهجر) أي الفحش (من الكلام) الفاحش، فيصون الصائم لسانه عن الكذب والغيبة ونحو ذلك كالشتم، وإن شتمه أحد فليقل مرتين أو ثلاثاً: إني صائم إما بلسانه كما قال النووي في الأذكار، أو بقلبه كما نقله الرافعي عن الأئمة واقتصر عليه.
+<br/><br/>
+ويحرم صيام خمسة أيام العيدان- أي صوم يوم عيد الفطر وعيد الأضحى (وأيام التشريق) وهي (الثلاثة) التي بعد يوم النحر (ويكره) تحريماً (صوم يوم الشك) بلا سبب يقتضي صومه. وأشار المصنف لبعض صور هذا السبب بقوله (إلا أن يوافق عادة له) في تطوعه كمن عادته صيام يوم وإفطار يوم فوافق صومه يوم الشك، وله صيام يوم الشك أيضاً عن قضاء ونذر، ويوم الشك هو يوم الثلاثين من شعبان إذا لم ير الهلال ليلتها مع الصحو أو تحدث الناس برؤيته، ولم يعلم عدل رآه أو شهد برؤيته صبيان أو عبيد أو فسقة
+
+</font></div>
+<hr><br/>
+
+
+
+<b><center>Pengertian Puasa</b></center>
+
+<p>Lafadz shiyam dan shaum adalah dua bentuk kalimat masdar, yang secara bahasa keduanya bermakna menahan.</p>
+
+<p>Dan secara syara’ adalah menahan dari hal-hal yang membatalkan puasa disertai niat tertentu sepanjang siang hari yang bisa menerima ibadah puasa dari orang muslim yang berakal dan suci dari haidl dan nifas.</p><br/>
+
+<b><center>Syarat Wajib Puasa</b></center>
+
+<p>Syarat-syarat wajib berpuasa ada tiga perkara. Dalam sebagian redaksi ada empat perkara.</p>
+
+<p>Yaitu Islam, baligh, berakal dan mampu berpuasa.</p>
+
+<p>Dan ini (mampu berpuasa) tidak tercantum di dalam redaksi yang mengatakan syaratnya ada tiga perkara.</p>
+
+<p>Maka puasa tidak wajib bagi orang yang memiliki sifat yang sebaliknya.</p><br/>
+
+<b><center>Fardu-Fardu Puasa</b></center>
+
+<p>Fardlu-fardlunya puasa ada empat perkara.</p>
+
+<p>Salah satunya adalah niat di dalam hati.</p>
+
+<p>Jika puasa yang dikerjakan adalah fardlu seperti Ramadan atau puasa nadzar, maka harus melakukan niat di malam hari.</p>
+
+<p>Dan wajib menentukan puasa yang dilakukan di dalam puasa fardlu seperti puasa Ramadan.</p>
+
+<p>Niat puasa Ramadan yang paling sempurna adalah seseorang mengatakan, “saya niat melakukan puasa esok hari untuk melaksanakan kewajiban bulan Ramadan tahun ini karena Allah Ta’ala.”</p>
+
+<p>Fardlu kedua adalah menahan dari makan dan minum walaupun perkara yang dimakan dan yang diminum hanya sedikit, hal ini ketika ada unsur kesengajaan.</p>
+
+<p>Jika seorang yang berpuasa melakukan makan dalam keadaan lupa atau tidak mengetahui hukumnya, maka puasanya tidak batal jika ia adalah orang yang baru masuk Islam atau hidup jauh dari ulama’. Jika tidak demikian, maka puasanya batal.</p>
+
+<p>Fardlu ke tiga adalah menahan dari melakukan jima’ dengan sengaja.</p>
+
+<p>Adapun melakukan jima’ dalam keadaan lupa, maka hukumnya sama seperti makan dalam keadaan lupa.</p>
+
+<p>Fardlu ke empat adalah menahan dari muntah dengan sengaja. Jika ia terpaksa muntah, maka puasanya tidak batal.</p><br/>
+
+<b><center>Hal-Hal Yang Membatalkan Puasa</b></center>
+
+<p>Hal-hal yang membuat orang berpuasa menjadi batal ada sepuluh perkara.</p>
+
+<p>Yang pertama dan kedua adalah sesuatu yang masuk dengan sengaja ke dalam lubang badan yang terbuka atau tidak terbuka seperti masuk ke dalam kepala dari luka yang tembus ke otak.</p>
+
+<p>Yang dikehendaki adalah seseorang yang berpuasa harus mencegah masuknya sesuatu ke bagian badan yang dinamakan jauf (lubang).<sup>1</sup></p>
+
+<p>Yang ke tiga adalah al huqnah (menyuntik) di bagian salah satu dari qubul dan dubur.</p>
+
+<p>Huqnah adalah obat yang disuntikkan ke badan orang yang sakit melalui qubul atau dubur yang diungkapkan di dalam matan dengan bahasa “sabilaini (dua jalan)”.</p>
+
+<p>Yang ke empat adalah muntah dengan sengaja. Jika tidak sengaja, maka puasanya tidak batal seperti yang telah dijelaskan.</p>
+
+<p>Yang ke lima adalah wathi’ dengan sengaja di bagian farji.</p>
+
+<p>Maka puasa seseorang tidak batal sebab melakukan jima’ dalam keadaan lupa seperti yang telah dijelaskan.</p>
+
+<p>Yang ke enam adalah inzal, yaitu keluar sperma sebab bersentuhan kulit dengan tanpa melakukan jima’.</p>
+
+<p>Baik keluar sperma tersebut diharamkan seperti mengeluarkan sperma dengan tangannya sendiri, atau tidak diharamkan seperti mengeluarkan sperma dengan tangan istri atau budak perempuannya.</p>
+
+<p>Dengan bahasa “sebab bersentuhan kulit”, mushannif mengecualikan keluarnya sperma sebab mimpi basah, maka secara pasti hal itu tidak bisa membatalkan puasa.</p>
+
+<p>Yang ke tujuh hingga akhir yang ke sepuluh adalah haidl, nifas, gila dan murtad.</p>
+
+<p>Maka barang siapa mengalami hal tersebut di tengah-tengah pelaksanaan puasa, maka hal tersebut membatalkan puasanya.</p><br/>
+
+
+<b><center>Kesunahan-Kesunahan Puasa</b></center>
+
+<p>Di dalam puasa ada tiga perkara yang disunnahkan.</p>
+
+<p>Salah satunya adalah segera berbuka jika orang yang berpuasa tersebut telah meyaqini terbenamnya matahari.</p>
+
+<p>Jika ia masih ragu-ragu, maka tidak diperkenankan segera berbuka.</p>
+
+<p>Disunnahkan untuk berbuka dengan kurma kering. Jika tidak maka dengan air.</p>
+
+<p>Yang ke dua adalah mengakhirkan sahur selama tidak sampai mengalami keraguan -masuknya waktu Shubuh-. Jika tidak demikian, maka hendaknya tidak mengakhirkan sahur.</p>
+
+<p>Kesunahan sahur sudah bisa hasil dengan makan dan minum sedikit.</p>
+
+<p>Yang ke tiga adalah tidak berkata kotor.</p>
+
+<p>Maka orang yang berpuasa hendaknya menjaga lisannya dari berkata bohong, menggunjing orang lain dan sesamanya seperti mencela orang lain.</p>
+
+<p>Jika ada seseorang yang mencaci dirinya, maka hendaknya ia berkata dua atau tiga kali, “sesungguhnya aku sedang berpuasa.”</p>
+
+<p>Adakalanya mengucapkan dengan lisan seperti yang dijelaskan imam an Nawawi di dalam kitab al Adzkar.</p>
+
+<p>Atau dengan hati sebagaimana yang dinuqil oleh imam ar Rafi’i dari beberapa imam, dan hanya mengucapkan di dalam hati.</p><br/>
+
+<b><center>Puasa-Puasa Yang Diharamkan</b></center>
+
+<p>Haram melakukan puasa di dalam lima hari. Yaitu dua hari raya, maksudnya puasa di hari raya Idul Fitri dan Idul Adlha.</p>
+
+<p>Dan di hari-hari Tasyrik, yaitu tiga hari setelah hari raya kurban.</p></br/>
+
+<b><center>Puasa Yang Makruh Tahrim</b></center>
+
+<p>Hukumnya makruh tahrim melakukan puasa di hari Syak tanpa ada sebab yang menuntut untuk melakukan puasa pada hari itu.</p>
+
+<p>Mushannif memberi isyarah pada sebagian contoh - contoh sebab ini dengan perkataan beliau, “kecuali jika kebiasannya melakukan puasa bertepatan dengan hari tersebut”.</p>
+
+<p>Seperti orang yang memiliki kebiasaan puasa satu hari dan tidak puasa satu hari, kemudian giliran puasanya bertepatan dengan hari Syak. Seseorang juga diperkenankan melakukan puasa di hari Syak<sup>2</sup> sebagai pelunasan puasa qadla’ dan puasa nadzar.</p>
+
+<p>Hari Syak adalah hari tanggal tiga puluh Sya’ban ketika hilal tidak terlihat di malam hari sebelumnya padahal langit dalam keadaan terang, sedangkan orang-orang membicarakan bahwa hilal telah terlihat namun tidak ada orang adil yang diketahui telah melihatnyanya, atau yang bersaksi telah melihatnya adalah anak-anak kecil, budak atau orang-orang fasiq. </p>
+
+
+
+
+</p>
+
+
+
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Al-Munfatih (anggota tubuh yang terbuka) maksudnya adalah yang terbuka secara asal/bukan buatan,
+nampak dan terasa. Al-Baijuri, Darul Kutub Al-Ilmiyah, juz 1 hal. 558.</p>
+
+<p><sub>2</sub>Maksudnya puasa nadzar yang mendahului hari syak dan tidak ada maksud menadzari puasa hari syak. Seperti
+bernadzar puasa hari senin kemudian ternyata bertepatan dengan hari syak. Adapun bernadzar puasa hari syak
+atau bernadzar puasa hari-hari separuh kedua bulan Sya’ban, maka hukumnya tidak sah. Lihat Tausyikh, Darul
+Minhaj, hal. 180.</p>
+</phr>
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="">
+
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 1</font>
+	</a>
+	
+	<a href="2.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>
+
+
